@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COZIBONE</title>
+
+    <!-- IMPORTANT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* NAV */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(5px);
+            box-sizing: border-box;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-family: 'UnifrakturCook', cursive;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 12px;
+            letter-spacing: 2px;
+            opacity: 0.7;
+        }
+
+        .hero img {
+            width: 180px;
+            margin-top: 20px;
+            filter: grayscale(100%) contrast(120%);
+            transition: 0.4s;
+        }
+
+        .hero img:hover {
+            transform: scale(1.1);
+            filter: grayscale(0%);
+        }
+
+        /* SECTION */
+        section {
+            padding: 80px 15px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 22px;
+            letter-spacing: 3px;
+        }
+
+        /* MUSIC */
+        .music iframe {
+            width: 100%;
+            max-width: 350px;
+            opacity: 0.8;
+        }
+
+        /* ABOUT */
+        .about p {
+            max-width: 400px;
+            margin: auto;
+            font-size: 14px;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+
+        /* CONTACT */
+        .contact a {
+            display: block;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        /* GLITCH */
+        .glitch {
+            position: relative;
+        }
+
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            width: 100%;
+        }
+
+        .glitch::before {
+            color: red;
+            animation: glitchTop 1s infinite;
+        }
+
+        .glitch::after {
+            color: green;
+            animation: glitchBottom 1s infinite;
+        }
+
+        @keyframes glitchTop {
+            0% { clip-path: inset(0 0 80% 0); }
+            50% { clip-path: inset(0 0 20% 0); }
+            100% { clip-path: inset(0 0 80% 0); }
+        }
+
+        @keyframes glitchBottom {
+            0% { clip-path: inset(80% 0 0 0); }
+            50% { clip-path: inset(20% 0 0 0); }
+            100% { clip-path: inset(80% 0 0 0); }
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 30px;
+            font-size: 12px;
+            opacity: 0.5;
+        }
+
+        /* 🔥 DESKTOP UPGRADE */
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 70px;
+            }
+
+            .hero img {
+                width: 250px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div>Too Weird To Live. <br>Too Rare To Die.</br></div>
+        <div>
+            <a href="#music">MUSIC</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1 class="glitch" data-text="COZIBONE">COZIBONE</h1>
+        <p>FEEL SOMETHING!</p>
+        <img src="yourphoto.jpg">
+    </div>
+
+    <!-- MUSIC -->
+   <section id="music" class="music">
+    <h2>MUSIC</h2>
+
+    <a href="https://audiomack.com/wavyboiondope-/song/self-conscience-cozibone?share-user-id=161098927" target="_blank" class="music-link">
+        LISTEN NOW!
+    </a>
+
+   
+
+</section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>ABOUT</h2>
+        <p>  
+         Listen To The Sound Of Swag.
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>CONTACT</h2>
+        <a href="#">INSTAGRAM:@WAVYBOIONDOPE</a>
+        <a href="#">EMAIL:fayazkirk99@gmail.com</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 COZI WORLD.
+    </footer>
+
+</body>
+</html>
