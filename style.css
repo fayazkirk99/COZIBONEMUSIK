@@ -7,7 +7,7 @@
             overflow-x: hidden;
         }
 
-        /* NAV */
+       
         nav {
             display: flex;
             justify-content: space-between;
@@ -28,7 +28,7 @@
             letter-spacing: 2px;
         }
 
-        /* HERO */
+        
         .hero {
             height: 100vh;
             display: flex;
@@ -64,7 +64,7 @@
             filter: grayscale(0%);
         }
 
-        /* SECTION */
+       
         section {
             padding: 80px 15px;
             text-align: center;
@@ -75,14 +75,14 @@
             letter-spacing: 3px;
         }
 
-        /* MUSIC */
+        
         .music iframe {
             width: 100%;
             max-width: 350px;
             opacity: 0.8;
         }
 
-        /* ABOUT */
+        
         .about p {
             max-width: 400px;
             margin: auto;
@@ -91,7 +91,7 @@
             opacity: 0.8;
         }
 
-        /* CONTACT */
+       
         .contact a {
             display: block;
             margin: 10px;
@@ -101,7 +101,7 @@
             letter-spacing: 2px;
         }
 
-        /* GLITCH */
+      
         .glitch {
             position: relative;
         }
@@ -136,7 +136,7 @@
             100% { clip-path: inset(80% 0 0 0); }
         }
 
-        /* FOOTER */
+        
         footer {
             padding: 30px;
             font-size: 12px;
